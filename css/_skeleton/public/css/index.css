@@ -1,0 +1,5 @@
+/* -------------------------------------------------------------------------------------*/
+html, body { padding: 0; margin: 0; background: aliceblue; }
+main { border-bottom: thin solid black; }
+section { min-height: 50px; min-width: 50px; background: #555555; display: inline-block; }
+/* -------------------------------------------------------------------------------------*/
