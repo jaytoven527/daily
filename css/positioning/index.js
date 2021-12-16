@@ -1,6 +1,4 @@
 
 const {makeStandardServer} = require("./util/js/server");
 
-var dir = __dirname;
-
-makeStandardServer(dir, 3020);
+makeStandardServer(__dirname, 3020);
