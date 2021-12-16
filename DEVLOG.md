@@ -1,6 +1,13 @@
 ## Thurs, Dec 16 2021
 
 
+- Talked about Linux users and groups
+- Created two bare git repositories, covered why they are bare
+	- One "practice" directory, for various coding ventures across the stack
+	- One "shared" directory, for other things as seen fit
+
+
+
 
 ## Wed, Dec 15, 2021
 
