@@ -14,7 +14,11 @@ function makeStandardServer(dir, port = 3020) {
             var fileStream = fs.createReadStream(cssPath, "UTF-8");
             res.writeHead(200, {"Content-Type": "text/css"});
             fileStream.pipe(res);
-
+        } else if (req.url.match("\.js$")) {
+            var cssPath    = path.join(dir, 'public', req.url);
+            var fileStream = fs.createReadStream(cssPath, "UTF-8");
+            res.writeHead(200, {"Content-Type": "application/javascript"});
+            fileStream.pipe(res);
         } else if (req.url.match("\.png$")) {
             var imagePath  = path.join(dir, 'public', req.url);
             var fileStream = fs.createReadStream(imagePath);

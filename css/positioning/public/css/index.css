@@ -1,29 +1,22 @@
-html, body {
-    padding: 0;
-    margin: 0;
-    background: aliceblue;
+/**
+* @link https://meyerweb.com/eric/tools/css/reset/
+*/
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+
+html, body { 
+    padding: 0; margin: 0;
+    background: aliceblue; 
+    font-family: 'Tajawal', monospace;
 }
 
-main {
+main { 
     border-bottom: thin solid black;
-}
-section {
-    min-height: 50px;
-    min-width: 50px;
-    background: #555555;
-    display: inline-block;
-}
-
-#flex-1, #flex-2 {
     background: antiquewhite;
-    display: flex; margin: 1rem; border: thin solid black; padding: 1rem;}
-#flex-1 > *, #flex-2 > * { width: 100px; height: 100px; background: purple; display: block; }
-#flex-1 > *:first-child, #flex-2 > *:first-child { background: red; }
-#flex-1 > *:nth-child(2), #flex-2 > *:nth-child(2) { background: green; }
-#flex-1 > *:nth-child(3), #flex-2 > *:nth-child(3) { background: blue; }
+}
 
-/*   */
-#flex-1 { flex-direction: row; }
-#flex-1 { flex-direction: row-reverse; }
-#flex-1 { flex-direction: column; }
-#flex-1 { flex-direction: column-reverse; }
+section { 
+    min-height: 50px; 
+    min-width: 50px; 
+    background: #555555; 
+    display: inline-block; 
+}
