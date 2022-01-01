@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-hello
-=======
-# fibonacci-sequence
->>>>>>> refs/remotes/github/main
+This repository is about fibonacci sequence and recursion and other coding techniques.
