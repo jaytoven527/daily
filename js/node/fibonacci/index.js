@@ -33,27 +33,18 @@ function fibonacci_loop (num) {
     result = '';
 
     function resultReturned () {
-         inputValue = input.value;
-        var inputNumber = parseInt(inputValue);
-        console.log(inputNumber)
-         if (inputNumber !== Number) {
-             msg += 'Please enter a number.';
-             alert(msg);
-         } else {
-            while (i <= inputNumber - 1) {
-                msg += fibonacci_loop(i) + ',' + ' ';
-                i++;
-                if (i == inputNumber) {
-                    msg += fibonacci_loop(i);
-                }
-            }
+     inputValue = input.value;
+         while (i <= inputValue) {
+             msg += fibonacci_loop(i) + ',' + ' ';
+             i++;
+             }
+        
             
-    
     var el = document.getElementById('result');
     result = 'Result: ' + msg;
     el.innerHTML = result;
-    console.log(inputValue)
-         }      
+    console.log(msg)
+               
 }
 
 
