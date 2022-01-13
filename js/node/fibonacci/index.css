@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+    display: flex;
+    min-height: 100vh;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+

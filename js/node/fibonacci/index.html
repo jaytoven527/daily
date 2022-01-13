@@ -4,15 +4,14 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>fibonacci sequence</title>
+        <link rel="stylesheet" href="./index.css" />
     </head>
     <body>
-        <div id="root">
-            <form method="get">
-                <input type="number" name="number" onchange="resultReturned()" id="input" placeholder="Enter a number" />
-                <button type="button" name="submit" onclick="resultReturned()" id="submit">Enter</button>
-                <div id="result"></div>
-            </form>
-        </div>
-        <script src="./index.js"></script>
+            <div class="form-control">
+            <div id="result"></div>
+                <input type="number" name="number"  id="number" placeholder="Enter a number" />
+                <button type="button" id="button">Enter</button>
+            </div>                       
+    <script src="index.js"></script>
     </body>
 </html>
