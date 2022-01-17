@@ -1,59 +1,71 @@
-   
-function fibonacci_recursive (num) {
+
+function fib_loop (num) {
+    var numA = 1;
+    var numB = 0;
+
+    let outputNum;
+    let stopTracker = num;
+    while (stopTracker > 0) {
+        outputNum = numA;
+        var result, previous;
+       
+        result = numA + numB;
+
+        previous     = numA;
+        numB         = previous;
+        numA         = result;
+        stopTracker--;
+
+    }
+    return outputNum;
+}
+
+
+function fib_recursive (num) {
     if ( num <= 0) {
         return 0;
     } else if (num == 1) {
         return 1;
     } else {
-        return fibonacci_recursive(num - 1) + fibonacci_recursive(num - 2);
+        return fib_recursive(num - 1) + fib_recursive(num - 2);
     }
 }
-         
-const button = document.getElementById('button');
-var listNumbers = ''
 
-const state = 
-{
-    inputNumber: 0,
-    msg: null
-}
-button.addEventListener('click', function (e) { 
-    const number = document.getElementById('number');
-    const answer = fibonacci_recursive(number.value);
-    if(answer === 1) {   
-        state.msg = `Result: ${'poo poo pee pee'}`;
-    }
-    result.innerText = state.msg;
-});
+const number = document.getElementById('number');
+const form   = document.getElementById('form');
+var listNumbers = '';
 
 
-function handleUnder0(numberValue){
-    listNumbers += fibonacci_recursive(numberValue);
-}
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-function answer (numberValue) {
-    let count = 1;
-    
-    if(numberValue <= 0) {
-        handleUnder0(listNumbers)
-    } else if(numberValue == 1) {
-        listNumbers += fibonacci_recursive(numberValue);
-    } else {
-        while(count <= numberValue) {
-            listNumbers += fibonacci_recursive(count) + ',' + ' ';
-        }
-    }
-    
-    return log(listNumbers);
-} 
+    let msg = '';
+    listNumbers = '';
+    answer();
 
-function writeMessage(res) {
-    return 'Result: ' + res;
-}
-
-function log(listNumbers) {
-    state.msg        = writeMessage(listNumbers);
+    msg += 'Result: ' + listNumbers;
     const result = document.getElementById('result');
-    result.innerText = state.msg;
-}
+    result.innerText = msg
+    console.log(msg)    
+})
 
+
+function answer (val) {
+    
+var numberValue = Number(number.value);
+    val = numberValue;
+    if(val <= 0){
+        listNumbers += 0
+        return;
+    }
+    if(val == 1) {
+        listNumbers += 1
+        return;
+    }
+let i = 1;
+    while(i <= numberValue) {
+    listNumbers += fib_recursive(i) + ',' + ' ';
+     i++;
+    }    
+}
+    

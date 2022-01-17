@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: bisque;
+    background-color: white;
     display: flex;
     min-height: 100vh;
     flex-flow: column;
