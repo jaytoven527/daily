@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.download-container {
+   display: flex;
+   flex-flow: row;
+   border: 2px solid rgb(75, 75, 75);
+   width: 388px;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+   position:relative;
+   bottom: 120px;
+   background-color: black;
+}
+
+.stranger-things{
+ margin-top: 5px;
+}
+
+ .stranger-things img {
+    width: 45.71px;
+    height: 64px;
+}
+
+.gif img {
+    width: 3em;
+    height: 3em;
+}
+
+.text {
+    margin-left: 12.5px;
+    width: 250px;
+}
+
+.text-0 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.text-1 {
+    color: rgb(66, 66, 248);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 475;
+}
+
