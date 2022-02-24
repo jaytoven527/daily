@@ -33,7 +33,7 @@ function fib_recursive (num) {
 
 const number = document.getElementById('number');
 const form   = document.getElementById('form');
-var listNumbers = '';
+var listNumbers;
 
 
 form.addEventListener('submit', (e) => {
